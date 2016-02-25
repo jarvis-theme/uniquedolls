@@ -2,7 +2,7 @@
     <div id="top-header">
         <div id="logo" class="fl">
             @if(logo_image_url())
-            <a href="{{url('home')}}">{{HTML::image(logo_image_url(), 'Logo', array('id'=>'logos'))}}</a>
+            <a href="{{url('home')}}">{{HTML::image(logo_image_url(), 'Logo '.Theme::place('title'), array('id'=>'logos'))}}</a>
             @else
             <a href="{{url('home')}}" class="logo-text"><h1>{{ shortText(Theme::place('title'),26) }}</h1></a>
             @endif

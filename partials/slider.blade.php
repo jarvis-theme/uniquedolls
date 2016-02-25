@@ -9,7 +9,7 @@
                 @else
                 <a href="#">
                 @endif
-                    <img src="{{slide_image_url($val->gambar)}}" alt="Slide" />
+                    <img src="{{slide_image_url($val->gambar)}}" alt="{{$val->title}}" />
                 </a>
             </li>
             @endforeach 
