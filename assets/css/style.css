@@ -276,3 +276,21 @@ span.input-group-btn.btnlp{float: left}
 @media only screen and (min-width: 1200px) {
 	.captcha{width: 65%; float: right}
 }
+center#paypal button[type="submit"] {
+	background: #019CDE;
+	border: none;
+	padding: 10px;
+	color: #fff;
+	border-radius: 5px;
+}
+center#paypal button[type="submit"]:hover { opacity: 0.6; cursor: pointer; }
+form[name="order"] > input[name="SAVE"] {
+	background: #B5062D; border: medium none; padding: 10px; border-radius: 5px; color: #fff;
+}
+form[name="order"] > input[name="SAVE"]:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+.table-responsive { overflow-x: auto; }
+.btn-pay { background: #00aee7; border: none; padding: 10px; color: #fff }
+.btn-pay:hover { cursor: pointer; opacity: 0.7 }
