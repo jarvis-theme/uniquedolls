@@ -148,7 +148,7 @@ div.col-sm-6.marginbottom{ margin-bottom: 27px }
 input.form-control.lp{width: 70%}
 span.input-group-btn.btnlp{float: left}
 .fb_reset{ display: inline-block }
-.fb-share-button { top: -5px }
+.fb-share-button { top: -5px; margin: 0 5px 0 0 !important; }
 .result{font-style:italic; text-align:center}
 .items{margin-left: 8px}
 .find-code{margin-left:10px}.pull-left{float:left}
@@ -235,47 +235,6 @@ span.input-group-btn.btnlp{float: left}
 .slides li{color: #fff}.slides li strong{color: #dfffaf}
 .social-media a:hover{background-color: #717171; color: #ffd71f}
 .login-desc ul li{list-style: inside;}
-
-@media screen and (max-width: 320px){
-   #all-product-home div div ul li div div a img{ width: 197px } 
-}
-@media screen and (max-width: 736px){
-    #testimonial{ display: none }
-}
-/* iPads (landscape) */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-    footer #newsletter .btn{ float: left }
-    footer #newsletter input[type="text"]{ width: 40%; float: left }
-    footer #newsletter p{ margin-bottom: 52px }
-}
-
-/* iPads (portrait) */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    footer #newsletter .btn{ float: left }
-    footer #newsletter input[type="text"]{ width: 40%; float: left }
-    footer #newsletter p{ margin-bottom: 52px }
-}
-@media only screen and (min-device-width : 800px){
-    .info{float: right}
-}
-@media only screen and (max-width: 396px) {
-	input.form-control.lp{width: 100% !important}
-}
-@media screen and (max-width: 520px){
-	.buy-btn{position: relative !important; right: 0 !important; top: 10px; float: none; clear: both}
-	span.price{font-size: 13px; font-weight: 600}
-}
-@media screen and (max-width: 360px){
-	.product-list ul.grid li h5, span.price{font-size: 11px}
-	footer h4.title{font-size: 14px}
-	footer, footer p, footer a, footer form{font-size: 12px}
-}
-@media only screen and (max-width: 810px) {
-	.padd{padding: 0px 15px}
-}
-@media only screen and (min-width: 1200px) {
-	.captcha{width: 65%; float: right}
-}
 center#paypal button[type="submit"] {
 	background: #019CDE;
 	border: none;
@@ -294,3 +253,92 @@ form[name="order"] > input[name="SAVE"]:hover {
 .table-responsive { overflow-x: auto; }
 .btn-pay { background: #00aee7; border: none; padding: 10px; color: #fff }
 .btn-pay:hover { cursor: pointer; opacity: 0.7 }
+.mt10 { margin-top: 10px; }
+.mt20 { margin-top: 20px; }
+.mt30 { margin-top: 30px; }
+.contact-us { clear: both; }
+.social-media a.picmix {
+	width: initial;
+	height: initial;
+	border: none;
+	padding-top: 0;
+	margin: 2px 0;
+	opacity: 0.8;
+}
+.social-media a.picmix:hover { opacity: 1; }
+.social-media a.picmix img { width: 46px; }
+.midtrans {
+	background: #fafafa;
+	padding: 8px;
+}
+
+@media only screen and (min-width: 1200px) {
+	.captcha{width: 65%; float: right}
+}
+@media (max-width: 1199px) {
+	input[name="captcha"] { margin-top: 10px; }
+}
+/* iPads (landscape) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    footer #newsletter .btn{ float: left }
+    footer #newsletter input[type="text"]{ width: 40%; float: left }
+    footer #newsletter p{ margin-bottom: 52px }
+}
+
+/* iPads (portrait) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    footer #newsletter .btn{ float: left }
+    footer #newsletter input[type="text"]{ width: 40%; float: left }
+    footer #newsletter p{ margin-bottom: 52px }
+}
+@media only screen and (max-width: 810px) {
+	.padd{padding: 0px 15px}
+	#bg-slider .flex-direction-nav .flex-prev,
+	#bg-slider .flex-direction-nav .flex-next {background-size: 100px 50px;}
+	#bg-slider .flex-direction-nav a {
+		width: 50px;
+		height: 50px;
+	}
+}
+@media only screen and (min-device-width : 800px){
+    .info{float: right}
+}
+@media (max-width: 767px) {
+	.bank-logo { text-align: center; }
+	.quantity { text-align: center; }
+	.product-details .btm-details .addtocart { margin-right: 0; }
+	input[name="kodeorder"]{ margin-bottom: 10px; }
+	input[name="recoveryEmail"] { margin-bottom: 10px !important; }
+}
+@media screen and (max-width: 736px){
+    #testimonial{ display: none }
+}
+@media screen and (max-width: 520px){
+	.buy-btn{position: relative !important; right: 0 !important; top: 10px; float: none; clear: both}
+	span.price{font-size: 13px; font-weight: 600}
+}
+@media (max-width: 450px) {
+	.breadcrumb div { background: #e2f0cc; }
+}
+@media (max-width: 425px) {
+	#bg-slider .flex-direction-nav a {
+		margin-top: -20px;
+		width: 30px;
+		height: 30px;
+	}
+	#bg-slider .flex-direction-nav .flex-prev,
+	#bg-slider .flex-direction-nav .flex-next {
+	    background-size: 60px 30px;
+	}
+}
+@media only screen and (max-width: 396px) {
+	input.form-control.lp{width: 100% !important}
+}
+@media screen and (max-width: 360px){
+	.product-list ul.grid li h5, span.price{font-size: 11px}
+	footer h4.title{font-size: 14px}
+	footer, footer p, footer a, footer form{font-size: 12px}
+}
+@media screen and (max-width: 320px){
+   #all-product-home div div ul li div div a img{ width: 197px } 
+}

@@ -58,9 +58,9 @@
             <div class="tabs-description">
                 @if(count(list_blog(null,@$blog_category)) > 0)
                     @foreach(list_blog(null,@$blog_category) as $blogs)
-                    <h3 class="title">{{$blogs->judul}}</h3>
+                    <a href="{{blog_url($blogs)}}"><h1 class="title">{{$blogs->judul}}</h1></a>
                     <p>
-                        <small><i class="fa fa-calendar"></i> {{waktuTgl($blogs->updated_at)}}</small>&nbsp;&nbsp;
+                        <small><i class="fa fa-calendar"></i> {{waktuTgl($blogs->created_at)}}</small>&nbsp;&nbsp;
                         @if(!empty($blogs->kategori->nama))
                         <span class="date-post"><i class="fa fa-tags"></i> <a href="{{blog_category_url(@$blogs->kategori)}}">{{@$blogs->kategori->nama}}</a></span>
                         @endif

@@ -20,7 +20,7 @@
                             </ul>
                         </div><br>
                         <div class="tabs-btn-login">
-                            <a href="{{url('member/create')}}" class="register btn btn-warning">Register</a>
+                            <a href="{{url('member/create')}}" class="register btn btn-warning mt10">Register</a>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4">

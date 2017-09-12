@@ -56,7 +56,7 @@
         </div>
         <div id="center_column" class="inner-bg col-lg-9 col-xs-12 col-sm-8">
             <div class="tabs-description">
-                <h3 class="title">{{$detailblog->judul}}</h3>
+                <h1 class="title">{{$detailblog->judul}}</h1>
                 <p>
                     <small><i class="fa fa-calendar"></i> {{waktuTgl($detailblog->created_at)}}</small>&nbsp;&nbsp;
                     @if(!empty($detailblog->kategori->nama))

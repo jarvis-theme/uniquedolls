@@ -41,7 +41,9 @@
             <div class="bank-logo col-sm-8">
                 @if(list_banks()->count() > 0)
                     @foreach(list_banks() as $value)
+                    @if($value->status == 1)
                     <img src="{{bank_logo($value)}}" class="img-responsive" alt="{{$value->bankdefault->nama}}" title="{{$value->bankdefault->nama}}">
+                    @endif
                     @endforeach
                 @endif
                 @if(count(list_payments()) > 0)
@@ -59,6 +61,9 @@
                 @endif
                 @if(count(list_dokus()) > 0 && list_dokus()->status == 1)
                 <img class="img-responsive" src="{{url('img/bank/doku.jpg')}}" alt="doku myshortcart" title="Doku" />
+                @endif
+                @if(count(list_veritrans()) > 0 && list_veritrans()->status == 1 && list_veritrans()->type == 1)
+                <img class="midtrans" src="{{url('img/bank/midtrans.png')}}" alt="Midtrans" title="Midtrans">
                 @endif
             </div>
             <div class="social-media">
@@ -102,6 +107,11 @@
                     <div class="icon" title="Instagram">
                         <i class="fa fa-instagram"></i>
                     </div>
+                </a>
+                @endif
+                @if(!empty($kontak->picmix))
+                <a class="picmix" href="{{url($kontak->picmix)}}" target="_blank">
+                    <img src="//d3kamn3rg2loz7.cloudfront.net/blogs/event/icon-picmix.png">
                 </a>
                 @endif
             </div>

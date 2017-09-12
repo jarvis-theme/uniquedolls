@@ -148,8 +148,8 @@
                                         <div class="size-list">
                                             <div class="form-group">
                                                 @if($opsiproduk->count() > 0)
-                                                <label class="col-sm-4 control-label">Opsi :</label>
-                                                <div class="col-sm-5">
+                                                <label class="col-sm-5 col-lg-4 control-label">Opsi :</label>
+                                                <div class="col-sm-7 col-lg-5">
                                                     <div class="select-style">
                                                         <select class="form-control">
                                                             <option value="">-- Pilih Opsi --</option>
@@ -164,10 +164,10 @@
                                         </div>
                                         <div class="quantity">
                                             <div class="form-group">
-                                                <label class="col-sm-4 control-label">Jumlah :</label>
-                                                <div class="col-sm-5">
+                                                <label class="col-sm-5 col-lg-4 control-label">Jumlah :</label>
+                                                <div class="col-sm-7 col-lg-5">
                                                     <button type="submit" class="qtyminus" field="qty" /><i class="fa fa-caret-left"></i></button>
-                                                    <input type="text" name="qty" value="1" class="qty" />
+                                                    <input type="number" name="qty" value="1" class="qty" pattern="[0-9]" />
                                                     <button type="button" value="+" class="qtyplus" field="qty" /><i class="fa fa-caret-right"></i></button>
                                                 </div>
                                             </div>
